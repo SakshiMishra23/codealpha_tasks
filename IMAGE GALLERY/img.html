@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="img.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="formal">Formal</button>
+    <button class="filter-btn" data-filter="group">Group</button>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item" data-category="all">
+    <img src="sakshi-mishra.jpeg" alt="All">
+    </div>
+    <div class="gallery-item" data-category="formal">
+    <img src="my-family.jpeg" alt="Formal">
+    </div>
+    <div class="gallery-item" data-category="group">
+    <img src="my-itki.jpeg" alt="Group">
+    </div>
+    <!-- Add more images -->
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <div class="nav">
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="img.js"></script>
+</body>
+</html>
