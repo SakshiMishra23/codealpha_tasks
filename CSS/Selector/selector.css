@@ -1,0 +1,25 @@
+h2,p{
+    color: darkgreen;
+    background-color: yellow;
+}
+.intro>p{
+    color: blue;
+    background-color: aqua;
+}
+p.intro{
+    color: blue;
+    background-color: aqua;
+}
+#one{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+}
+#one>p{
+    background-color: aqua;
+}
+p.para{
+    width: 800px;
+    text-align: center;
+    background-color: greenyellow;
+}

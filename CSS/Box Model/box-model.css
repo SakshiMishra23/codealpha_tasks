@@ -1,0 +1,27 @@
+.para1{
+    border: 3px double black;
+    border-radius: 5px;
+    padding: 35px 35px 35px 35px;
+    background-image: url("/banner.jpg");
+    color: black;
+    background-color: aquamarine;
+    margin-top: 35px;
+}
+.para2{
+    border: 3px double black;
+    border-radius: 5px;
+    padding: 35px 35px 35px 35px;
+    background-image: url("/banner.jpg");
+    color: black;
+    background-color: aquamarine;
+    margin-top: 35px;
+}
+span{
+    display: inline-block;
+    border: 3px solid black;
+    height: 50px;
+    width: 100px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    background-color: yellow;
+}
