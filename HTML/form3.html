@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <title>Form Submission Example</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form id="myForm">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <button type="submit"></button>   
+    </form>
+    <p id="response"></p>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const responsePara = document.getElementById('response');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const email = formData.get('email');
+
+            responsePara.textContent = 'Form submitted! Name: Sakshi Mishra, Email: sakshimishra2302@gmail.com';
+        });
+    </script>
+</body>
+</html>
